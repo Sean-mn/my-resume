@@ -19,6 +19,7 @@ export default function RecentOpenSourceContributions() {
         <li key={contribution.url}>
           <a href={contribution.url}>
             {contribution.date} | {contribution.projectName} {contribution.title}
+            {contribution.status && ` (${contribution.status})`}
           </a>
         </li>
       ))}

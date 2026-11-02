@@ -64,6 +64,9 @@ export function OpenSourceList() {
                       <span className="oss-status">{contribution.status}</span>
                     ) : (
                       <>
+                        {contribution.status && (
+                          <span className="oss-status">{contribution.status}</span>
+                        )}
                         <DiffStat
                           additions={contribution.additions}
                           deletions={contribution.deletions}

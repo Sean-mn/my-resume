@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amond-server.kro.kr/sitemap.xml
+Sitemap: https://sean-mn.site/sitemap.xml

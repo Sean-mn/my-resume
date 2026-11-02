@@ -19,7 +19,7 @@ export async function exportResumePdf(): Promise<void> {
 
     const options = {
       margin: 0,
-      filename: '김태은-이력서.pdf',
+      filename: '박현민-이력서.pdf',
       image: { type: 'jpeg' as const, quality: 0.98 },
       html2canvas: {
         scale: 2,

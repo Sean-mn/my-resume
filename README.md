@@ -1,4 +1,4 @@
-# 김태은 - 이력서 웹사이트
+# 박현민 - 이력서 웹사이트
 
 ## 라이선스
 
@@ -6,5 +6,5 @@
 
 ## 문의
 
-- Email: [snowykte0426@naver.com](mailto:snowykte0426@naver.com)
-- GitHub: [@snowykte0426](https://github.com/snowykte0426)
+- Email: [a01080080329@gmail.com](mailto:a01080080329@gmail.com)
+- GitHub: [@Sean-mn](https://github.com/Sean-mn)

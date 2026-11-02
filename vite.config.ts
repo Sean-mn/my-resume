@@ -44,12 +44,6 @@ export default defineConfig({
     cssMinify: true,
     chunkSizeWarningLimit: 1000,
   },
-  preview: {
-    host: '0.0.0.0',
-    port: 4173,
-    strictPort: false,
-    allowedHosts: ['amond-server.kro.kr', 'localhost', 'kimtaeeun.site'],
-  },
   server: {
     host: '0.0.0.0',
     port: 5173,
