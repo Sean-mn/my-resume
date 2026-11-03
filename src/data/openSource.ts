@@ -71,7 +71,6 @@ export const openSourceProjects: OpenSourceProject[] = [
       'xUnit.net 테스트 코드의 잘못된 사용을 찾아 고쳐 주는 Roslyn 분석기 모음입니다. 이슈는 xunit/xunit 저장소에서 함께 관리합니다.',
     contributions: [
       {
-        status: '리뷰 중',
         date: '2026.11.03',
         title: 'xUnit2024가 함수 포인터·void 포인터에 잘못된 단언을 제안하는 버그 수정',
         summary: 'xUnit2024가 Assert.Null/NotNull에 넣을 수 없는 함수 포인터와 void*의 null 비교에도 이 단언을 제안해, 그대로 적용하면 빌드가 깨졌습니다. 두 포인터만 진단에서 제외하고, int*처럼 단언에 넣을 수 있는 포인터는 기존대로 진단하도록 고쳤습니다.',
@@ -82,7 +81,6 @@ export const openSourceProjects: OpenSourceProject[] = [
         changedFiles: 2,
       },
       {
-        status: '리뷰 중',
         date: '2026.11.01',
         title: 'xUnit2023 코드 수정기가 일부 검사 함수를 삭제하는 버그 수정',
         summary: '단일 검사 함수 Assert.Collection을 Assert.Single로 바꾸는 수정기가 처리하지 못하는 형태를 만나면 단언문을 통째로 지우던 문제를, 검사 함수를 보존할 수 있을 때만 수정을 제안하도록 고쳤습니다.',
@@ -99,7 +97,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         summary: '괄호 람다·메서드 그룹·지역 대리자·async 람다 등에서 수정기가 단언문을 지우거나 await를 빠뜨리는 사례를 재현해 정리했습니다.',
         url: 'https://github.com/xunit/xunit/issues/3659',
         ref: 'xunit#3659',
-        status: '수정 PR 리뷰 중',
+        status: '해결됨',
       },
     ],
   },
