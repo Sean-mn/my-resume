@@ -72,6 +72,17 @@ export const openSourceProjects: OpenSourceProject[] = [
     contributions: [
       {
         status: '리뷰 중',
+        date: '2026.11.03',
+        title: 'xUnit2024가 함수 포인터·void 포인터에 잘못된 단언을 제안하는 버그 수정',
+        summary: 'null 비교를 Assert.Null/NotNull로 바꾸라는 제안이 이를 받을 수 없는 함수 포인터와 void*에도 나와 적용하면 빌드가 깨지던 문제를, 해당 피연산자만 제외하고 int* 같은 유효한 포인터는 그대로 진단하도록 고쳤습니다.',
+        url: 'https://github.com/xunit/xunit.analyzers/pull/239',
+        ref: '#239',
+        additions: 55,
+        deletions: 3,
+        changedFiles: 2,
+      },
+      {
+        status: '리뷰 중',
         date: '2026.11.01',
         title: 'xUnit2023 코드 수정기가 일부 검사 함수를 삭제하는 버그 수정',
         summary: '단일 검사 함수 Assert.Collection을 Assert.Single로 바꾸는 수정기가 처리하지 못하는 형태를 만나면 단언문을 통째로 지우던 문제를, 검사 함수를 보존할 수 있을 때만 수정을 제안하도록 고쳤습니다.',
