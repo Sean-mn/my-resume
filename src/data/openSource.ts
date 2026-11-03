@@ -44,7 +44,7 @@ export const openSourceProjects: OpenSourceProject[] = [
       {
         date: '2026.11.03',
         title: 'JSON 엔티티 컬렉션의 잘못된 요소에 대한 예외 메시지 개선',
-        summary: 'JSON 엔티티 컬렉션에 null이나 객체가 아닌 요소가 있으면 일반적인 토큰 오류만 던지던 것을, 엔티티 타입과 내비게이션 이름을 담은 예외로 바꾸고 기능 테스트를 추가했습니다.',
+        summary: '1년 넘게 열려 있던 #35863에 수정 계획을 먼저 제안해 메인테이너 승인을 받고, JSON 엔티티 컬렉션에 null이나 객체가 아닌 요소가 있을 때 엔티티 타입과 내비게이션 이름을 담은 예외를 던지도록 고쳐 기능 테스트를 추가했습니다.',
         url: 'https://github.com/dotnet/efcore/pull/39485',
         ref: '#39485',
         additions: 127,
