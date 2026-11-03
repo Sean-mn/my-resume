@@ -34,6 +34,35 @@ export interface OpenSourceProject {
 
 export const openSourceProjects: OpenSourceProject[] = [
   {
+    name: 'efcore',
+    owner: 'dotnet',
+    url: 'https://github.com/dotnet/efcore',
+    platform: 'github',
+    description:
+      '.NET 표준 객체-데이터베이스 매퍼로, LINQ 쿼리·변경 추적·스키마 마이그레이션을 지원합니다.',
+    contributions: [
+      {
+        date: '2026.11.03',
+        title: 'JSON 엔티티 컬렉션의 잘못된 요소에 대한 예외 메시지 개선',
+        summary: 'JSON 엔티티 컬렉션에 null이나 객체가 아닌 요소가 있으면 일반적인 토큰 오류만 던지던 것을, 엔티티 타입과 내비게이션 이름을 담은 예외로 바꾸고 기능 테스트를 추가했습니다.',
+        url: 'https://github.com/dotnet/efcore/pull/39485',
+        ref: '#39485',
+        additions: 127,
+        deletions: 1,
+        changedFiles: 5,
+      },
+      {
+        kind: 'issue',
+        date: '2026.10.31',
+        title: 'JSON 구체화 과정에 남은 모호한 토큰 타입 예외 개선 제안',
+        summary: '#39485 이후에도 최상위 JSON 컬렉션·루트 토큰 불일치·기본형 컬렉션에서 문맥 없는 "Invalid token type" 예외가 남은 지점과, 이미 지난 토큰 타입을 보고하는 버그를 정리했습니다.',
+        url: 'https://github.com/dotnet/efcore/issues/39486',
+        ref: '#39486',
+        status: '진행 중',
+      },
+    ],
+  },
+  {
     name: 'xunit.analyzers',
     owner: 'xunit',
     url: 'https://github.com/xunit/xunit.analyzers',
@@ -60,36 +89,6 @@ export const openSourceProjects: OpenSourceProject[] = [
         url: 'https://github.com/xunit/xunit/issues/3659',
         ref: 'xunit#3659',
         status: '수정 PR 리뷰 중',
-      },
-    ],
-  },
-  {
-    name: 'efcore',
-    owner: 'dotnet',
-    url: 'https://github.com/dotnet/efcore',
-    platform: 'github',
-    description:
-      '.NET 표준 객체-데이터베이스 매퍼로, LINQ 쿼리·변경 추적·스키마 마이그레이션을 지원합니다.',
-    contributions: [
-      {
-        kind: 'issue',
-        date: '2026.10.31',
-        title: 'JSON 구체화 과정에 남은 모호한 토큰 타입 예외 개선 제안',
-        summary: '#39485 이후에도 최상위 JSON 컬렉션·루트 토큰 불일치·기본형 컬렉션에서 문맥 없는 "Invalid token type" 예외가 남은 지점과, 이미 지난 토큰 타입을 보고하는 버그를 정리했습니다.',
-        url: 'https://github.com/dotnet/efcore/issues/39486',
-        ref: '#39486',
-        status: '진행 중',
-      },
-      {
-        status: '리뷰 중',
-        date: '2026.10.31',
-        title: 'JSON 엔티티 컬렉션의 잘못된 요소에 대한 예외 메시지 개선',
-        summary: 'JSON 엔티티 컬렉션에 null이나 객체가 아닌 요소가 있으면 일반적인 토큰 오류만 던지던 것을, 엔티티 타입과 내비게이션 이름을 담은 예외로 바꾸고 기능 테스트를 추가했습니다.',
-        url: 'https://github.com/dotnet/efcore/pull/39485',
-        ref: '#39485',
-        additions: 127,
-        deletions: 1,
-        changedFiles: 5,
       },
     ],
   },
