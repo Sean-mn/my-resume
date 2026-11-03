@@ -74,7 +74,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         status: '리뷰 중',
         date: '2026.11.03',
         title: 'xUnit2024가 함수 포인터·void 포인터에 잘못된 단언을 제안하는 버그 수정',
-        summary: 'null 비교를 Assert.Null/NotNull로 바꾸라는 제안이 이를 받을 수 없는 함수 포인터와 void*에도 나와 적용하면 빌드가 깨지던 문제를, 해당 피연산자만 제외하고 int* 같은 유효한 포인터는 그대로 진단하도록 고쳤습니다.',
+        summary: 'xUnit2024가 Assert.Null/NotNull에 넣을 수 없는 함수 포인터와 void*의 null 비교에도 이 단언을 제안해, 그대로 적용하면 빌드가 깨졌습니다. 두 포인터만 진단에서 제외하고, int*처럼 단언에 넣을 수 있는 포인터는 기존대로 진단하도록 고쳤습니다.',
         url: 'https://github.com/xunit/xunit.analyzers/pull/239',
         ref: '#239',
         additions: 55,
