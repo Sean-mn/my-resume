@@ -42,6 +42,16 @@ export const openSourceProjects: OpenSourceProject[] = [
       '.NET 표준 객체-데이터베이스 매퍼로, LINQ 쿼리·변경 추적·스키마 마이그레이션을 지원합니다.',
     contributions: [
       {
+        date: '2026.11.14',
+        title: 'JSON 구체화 과정에 남은 모호한 토큰 타입 예외 개선',
+        summary: '#39486에서 제보한 후속 작업으로, 최상위 JSON 컬렉션·루트 토큰 불일치·기본형 컬렉션에서 던지던 문맥 없는 "Invalid token type" 예외를 구체화 대상과 기대한 JSON 형태를 담은 메시지로 바꾸고, 이미 지난 토큰 타입을 보고하던 버그를 고쳐 테스트를 추가했습니다.',
+        url: 'https://github.com/dotnet/efcore/pull/39517',
+        ref: '#39517',
+        additions: 228,
+        deletions: 16,
+        changedFiles: 13,
+      },
+      {
         date: '2026.11.03',
         title: 'JSON 엔티티 컬렉션의 잘못된 요소에 대한 예외 메시지 개선',
         summary: '1년 넘게 열려 있던 #35863에 수정 계획을 먼저 제안해 메인테이너 승인을 받고, JSON 엔티티 컬렉션에 null이나 객체가 아닌 요소가 있을 때 엔티티 타입과 내비게이션 이름을 담은 예외를 던지도록 고쳐 기능 테스트를 추가했습니다.',
@@ -58,7 +68,7 @@ export const openSourceProjects: OpenSourceProject[] = [
         summary: '#39485 이후에도 최상위 JSON 컬렉션·루트 토큰 불일치·기본형 컬렉션에서 문맥 없는 "Invalid token type" 예외가 남은 지점과, 이미 지난 토큰 타입을 보고하는 버그를 정리했습니다.',
         url: 'https://github.com/dotnet/efcore/issues/39486',
         ref: '#39486',
-        status: '진행 중',
+        status: '해결됨',
       },
     ],
   },
